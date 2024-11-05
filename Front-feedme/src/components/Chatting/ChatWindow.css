@@ -1,0 +1,82 @@
+.WebChatDiv{
+  width: 80%;
+}
+
+#messageContainer {
+  height: 40vh;
+  overflow: auto;
+  border: 1px solid #e0e0e0;
+  border-radius: 10px;
+  padding: 10px;
+  background-color: #f9f9f9;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.message {
+  padding: 10px;
+  margin-bottom: 10px;
+  border-radius: 8px;
+  font-size: 14px;
+  max-width: 70%;
+  line-height: 1.4;
+  word-wrap: break-word;
+}
+
+.message.own {
+  background-color: #d1e7dd;
+  align-self: flex-end;
+  text-align: right;
+}
+
+.message.other {
+  background-color: #e9ecef;
+  align-self: flex-start;
+  text-align: left;
+}
+
+#messageContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+#messageContainer::-webkit-scrollbar {
+  width: 10px;
+}
+
+#messageContainer::-webkit-scrollbar-thumb {
+  background-color: rgba(0, 0, 0, 0.5);
+  border-radius: 20px;
+}
+
+#messageContainer::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+.WebChats {
+  display: flex;
+  align-items: center;
+  margin-top: 10px; 
+}
+
+.WebChatInput {
+  flex-grow: 1; 
+  padding: 10px;
+  margin-right: 10px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  font-size: 14px;
+}
+
+.WebChatButton {
+  padding: 10px 20px;
+  background-color: rgba(158, 105, 250, 0.7);
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.WebChatButton:hover {
+  background-color:  #9E69FA;
+}

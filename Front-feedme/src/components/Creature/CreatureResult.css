@@ -1,0 +1,126 @@
+.CreatureResultMain {
+  width: 100%;
+  height: 100vh;
+  overflow-x: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.CreatureResultMain::before {
+  content: '';
+  background: url('../../assets/images/img-main.png') no-repeat center;
+  background-size: cover;
+  opacity: 0.7;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  overflow-x: hidden;
+  display: flex;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+}
+
+.CreatureResultContainer {
+  background: rgba(255, 255, 255, 0.8);
+  border-radius: 30px;
+  box-shadow: 0 19px 38px rgba(0, 0, 0, 0.30), 0 15px 12px rgba(0, 0, 0, 0.22);
+  display: flex;
+  flex-direction: column;
+  width: 78%;
+  height: 85%;
+  position: relative;
+  z-index: 1;
+}
+
+.CreatureResultHeader {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 3%;
+}
+
+.CreatureResultImage {
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+  margin-bottom: 1%;
+}
+
+.CreatureResultNameContainer {
+  background-color: rgba(255, 95, 95, 0.13);
+  border-radius: 15px;
+  margin-bottom: 1em;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 5%;
+  margin-left: 10%;
+  margin-right: 10%;
+  height: 10%;
+}
+
+.CreatureResultName {
+  font-size: 2.5rem;
+  text-align: center;
+  font-family: 'PretendardSB';
+}
+
+.CreatureResultStartButton {
+  background-color: #FF5F5F;
+  color: white;
+  padding: 1% 3%;
+  border: none;
+  border-radius: 15px;
+  font-size: 1em;
+  cursor: pointer;
+  position: absolute;
+  right: 7%;
+  bottom: 5%;
+  font-family: 'PretendardM';
+}
+
+.CreatureResultStartButton:hover {
+  background-color: #d13939;
+}
+
+.CreatureResultReloadButton {
+  background-color: #8D8D8D;
+  padding: 0.8% 3.5%;
+  border-radius: 15px;
+  border: none;
+  position: absolute;
+  left: 7%;
+  bottom: 5%;
+  text-decoration: none;
+  font-size: 1em;
+  z-index: 10;
+}
+
+.CreatureResultReloadButton button {
+  background: none; 
+  border: none;
+  padding: 0;
+  cursor: pointer;
+}
+
+
+.CreatureResultReloadButton:hover {
+  background-color: #565656;
+}
+
+.backButton {
+  position: absolute;
+  top: 2.5%;
+  left: 2%;
+  color: #333;
+  text-decoration: none;
+  font-size: 1em;
+  z-index: 10;
+}

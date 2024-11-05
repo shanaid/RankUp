@@ -1,0 +1,113 @@
+.Login {
+  width: 100%;
+  height: 100vh;
+  /* overflow-x: hidden;
+  overflow-y: scroll; */
+  /* background: url('../assets/images/test2.png') no-repeat center;
+  background-size: cover; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  font-family: 'PretendardR';
+}
+
+.Login::before {
+  content: "";
+  background: url('../assets/images/img-main.png') no-repeat center;
+  background-size: cover;
+  opacity: 0.6;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  right: 0px;
+  bottom: 0px;
+  overflow: hidden;
+  /* overflow-y: scroll; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.LoginRectangle {
+  width: 78%;
+  height: 85%;
+  border-radius: 30px;
+  background-color: white;
+  box-shadow: 0 19px 38px rgba(0, 0, 0, 0.30), 0 15px 12px rgba(0, 0, 0, 0.22);
+  display: flex;
+  flex-direction: row;
+  position: relative;
+}
+
+.LoginImage {
+  width: 60%;
+  height: 100%;
+  background: url('../assets/images/img-main.png') no-repeat center;
+  background-size: cover;
+  position: relative;
+  border-radius: 30px 0px 0px 30px;
+}
+
+.LoginRecInLogin {
+  width: 40%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: start;
+}
+
+.LoginRecInLogin>h1 {
+  margin-top: 130px;
+  font-family: 'PretendardB';
+}
+
+.LoginRecInLogin>p {
+  margin: 0 0 25px 0;
+  font-family: 'PretendardR';
+  color: #818181;
+}
+
+.LoginRecInLogin>hr {
+  width: 85%;
+  margin: 30px 0;
+  border: 0px;
+  height: 1px;
+  background: linear-gradient(to left, transparent, #ADADAD, transparent);
+}
+
+.LoginButtons {
+  margin-top: 15px;
+}
+
+.LoginGoogleButton {
+  margin-bottom: 35px;
+  transition: transform 0.3s ease-in-out;
+  cursor: pointer;
+}
+
+.LoginNaverButton {
+  margin-bottom: 80px;
+  transition: transform 0.3s ease-in-out;
+  cursor: pointer;
+}
+
+.LoginGoogleButton:hover {
+  transform: translateY(-6px); 
+}
+
+.LoginNaverButton:hover {
+  transform: translateY(-6px); 
+}
+
+.LoginButtons span {
+  font-family: 'PretendardR';
+  color: #4d4d4d;
+}
+
+.LoginSignup {
+  margin-left: 10px;
+  color: #9E69FA  ;
+  font-family: 'PretendardM';
+}

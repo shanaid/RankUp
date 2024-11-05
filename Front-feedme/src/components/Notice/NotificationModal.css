@@ -1,0 +1,100 @@
+.NoticeModal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: end;
+    align-items: start;
+    font-family: 'PretendardR';
+    z-index: 1000 !important;
+}
+
+.NoticeContent {
+    margin-top: 60px;
+    background: white;
+    padding: 30px;
+    border-radius: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    width: 40%;
+    max-height: 60vh;
+    /* 최대 높이 설정 */
+    overflow-y: auto;
+    /* 세로 스크롤 허용 */
+    overflow-x: hidden;
+    /* z-index: 1001;     */
+}
+
+.NoticeTitle {
+    font-size: 13px;
+    display: flex;
+    justify-content: space-between;
+    font-family: 'PretendardM';
+}
+
+.NoticeContent h2 {
+    margin-top: 0;
+}
+
+.NoticeContent ul {
+    list-style: none;
+    padding: 0;
+}
+
+.NoticeContent li {
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    background-color: rgba(158, 105, 250, 0.13);
+    border-radius: 10px;
+}
+
+.NoticeButton {
+    cursor: pointer;
+    color: black;
+}
+
+.SettingOnOff {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-family: 'PretendardR';
+    font-size: 16px;
+}
+
+/* Webkit 기반 브라우저 (Chrome, Safari) */
+.NoticeContent::-webkit-scrollbar {
+    width: 10px;
+    /* 스크롤바의 너비 */
+}
+
+.NoticeContent::-webkit-scrollbar-thumb {
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 20px;
+}
+
+/* .NoticeContent::-webkit-scrollbar-track {
+    background-color: rgba(0, 0, 0, 0);
+} */
+
+.NoticeContent::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}
+
+.AlarmFriends {
+    padding: 5px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    font-family: 'PretendardM';
+    cursor: pointer;
+}
+
+.AlarmFriends span {
+    margin-left: 10px;
+}
+
+.RequestButtons {
+    margin-left: auto;
+}

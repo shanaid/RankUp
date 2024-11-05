@@ -1,0 +1,77 @@
+plugins {
+	id 'java'
+	id 'org.springframework.boot' version '3.3.2'
+	id 'io.spring.dependency-management' version '1.1.6'
+}
+
+group = 'com.todoslave'
+version = '0.0.1-SNAPSHOT'
+
+java {
+	toolchain {
+		languageVersion = JavaLanguageVersion.of(17)
+	}
+}
+
+configurations {
+	compileOnly {
+		extendsFrom annotationProcessor
+	}
+}
+
+repositories {
+	mavenCentral()
+}
+
+dependencies {
+	implementation 'org.springframework.boot:spring-boot-starter-data-jpa'
+	implementation 'org.springframework.boot:spring-boot-starter-web'
+	implementation 'org.springframework.boot:spring-boot-starter-websocket'
+	implementation 'org.springframework.boot:spring-boot-starter-webflux'
+	version = '0.0.1-SNAPSHOT'
+	compileOnly 'org.projectlombok:lombok'
+	runtimeOnly 'com.mysql:mysql-connector-j'
+	runtimeOnly 'com.h2database:h2'
+	annotationProcessor 'org.projectlombok:lombok'
+	testImplementation 'org.springframework.boot:spring-boot-starter-test'
+	testRuntimeOnly 'org.junit.platform:junit-platform-launcher'
+
+	// table 보이기
+	implementation("com.github.gavlyukovskiy:p6spy-spring-boot-starter:1.9.1")
+
+	// 시큐리티 설정
+	implementation 'org.springframework.boot:spring-boot-starter-security'
+	implementation 'org.thymeleaf.extras:thymeleaf-extras-springsecurity6'
+	testImplementation 'org.springframework.security:spring-security-test'
+
+	//스웨거
+	implementation 'org.springdoc:springdoc-openapi-starter-webmvc-ui:2.2.0'
+
+	//MongoDB
+	implementation 'org.springframework.boot:spring-boot-starter-data-mongodb'
+
+	//JWT
+	testImplementation 'org.projectlombok:lombok'
+	implementation 'io.jsonwebtoken:jjwt:0.9.1'
+	implementation 'javax.xml.bind:jaxb-api:2.3.1'
+
+	//OAuth 2.0
+	implementation 'org.springframework.boot:spring-boot-starter-oauth2-client'
+
+	//redis
+	implementation 'org.springframework.boot:spring-boot-starter-data-redis'
+
+	// ..env 받아오기
+	implementation 'io.github.cdimascio:java-dotenv:5.2.2'
+
+	//JUnit4 추가
+	testImplementation("org.junit.vintage:junit-vintage-engine") {
+		exclude group: "org.hamcrest", module: "hamcrest-core"
+	}
+
+	implementation 'commons-io:commons-io:2.8.0'
+}
+
+tasks.named('test') {
+	useJUnitPlatform()
+}

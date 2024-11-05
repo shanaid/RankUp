@@ -1,0 +1,87 @@
+.TodoBack {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    overflow-x: hidden;
+} 
+
+.TodoBack::before {
+    content: '';
+    background: url('../../assets/images/img-main.png') no-repeat center;
+    background-size: cover;
+    opacity: 0.8;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    overflow: hidden;
+    display: flex;
+    /* z-index: -1; */
+    justify-content: center;
+    align-items: center;
+}
+
+.TodoContainer {
+    width: 83%;
+    height: 85%;
+    border-radius: 20px;
+    background-color: rgba(255, 255, 255, 0.4);
+    backdrop-filter: blur(12px);
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    position: relative;
+}
+
+.TodoMain {
+    width: 80%;
+    height: 91%;
+    display: flex;
+    flex-direction: column-reverse;
+}
+
+/* .TodoMain > .Search {
+    width: 100%; 
+    height: 10%; 
+    margin-bottom: 20px; 
+} */
+
+.TodoDashboard {
+    /* display: flex;
+    justify-content: flex-start;
+    margin-top: 25px;
+    height: 93%;
+    border: solid 1px; */
+
+    display: flex;
+    justify-content: flex-start;
+    margin-top: 25px;
+    margin-right: 3%;
+    height: 93%; 
+    border-radius: 20px;
+    background-color: rgba(255, 255, 255, 0.6);
+    backdrop-filter: blur(12px);
+}
+
+.TodoList {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    overflow-y: auto;
+    
+    align-items: center;
+    /* border: 1px solid red; */
+    /* height: 80%; */
+}
+
+.TodoCreatures {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    /* align-items: center; */
+    flex-direction: column;
+}

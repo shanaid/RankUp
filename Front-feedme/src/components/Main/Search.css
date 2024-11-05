@@ -1,0 +1,131 @@
+.search-bar-container {
+    position: relative;
+    border-radius: 20px;
+    background-color: rgba(255, 255, 255, 0.5);
+    backdrop-filter: blur(12px);
+    margin-right: 25px;
+    height: 10%;
+    z-index: 1; /* Ensure this has a lower z-index than the modal */
+}
+
+.search-input {
+    font-family: 'PretendardR';
+    font-size: 16px;
+    width: 50%;
+    height: 100%;
+    padding: 10px 10px 10px 60px;
+    border-radius: 20px;
+    box-sizing: border-box;
+    border: none;
+    background: transparent;
+    outline: none;
+}
+
+.search-icon {
+    position: absolute;
+    top: 55%;
+    left: 25px;
+    transform: translateY(-50%);
+    pointer-events: none;
+}
+
+.search-icon img {
+    width: 28px;
+    height: 28px;
+}
+
+.noti-mypage-icons {
+    display: flex;
+    position: absolute;
+    top: 55%;
+    right: 25px;
+    transform: translateY(-50%);
+}
+
+.noti-mypage-icons img {
+    width: 33px;
+    height: 33px;
+    margin-left: 10px;
+    transition: transform 0.3s ease-in-out;
+    cursor: pointer;
+}
+
+.noti-mypage-icons img:hover {
+    transform: translateY(-3px); 
+}
+
+.suggestions-modal {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 80%;
+    margin-top: 8px;
+    border-radius: 10px;
+    background-color: rgba(255, 255, 255, 0.9);
+    backdrop-filter: blur(10px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    z-index: 99999;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.suggestions-list {
+    list-style: none;
+    margin: 0;
+    padding: 10px 0;
+    max-height: 200px;
+    overflow-y: auto;
+}
+
+/* .suggestions-list li {
+    padding: 10px 20px;
+    cursor: pointer;
+    font-family: 'PretendardR';
+    font-size: 16px;
+} */
+
+.suggestions-list li:hover {
+    background-color: rgba(0, 0, 0, 0.1);
+}
+
+
+/* Webkit 기반 브라우저 (Chrome, Safari) */
+.suggestions-list::-webkit-scrollbar {
+    width: 10px;
+    /* 스크롤바의 너비 */
+}
+
+.suggestions-list::-webkit-scrollbar-thumb {
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 20px;
+}
+
+.suggestions-list::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}
+
+.suggestions-list li {
+    padding: 10px 20px;
+    cursor: pointer;
+    font-family: 'PretendardR';
+    font-size: 16px;
+    display: flex; 
+    justify-content: space-between; 
+    align-items: center; 
+    font-family: 'PretendardM';
+}
+
+.suggestionsListButton {
+    background-color: rgba(158, 105, 250, 0.7); 
+    color: white; 
+    border: none; 
+    border-radius: 5px; 
+    padding: 5px 10px; 
+    cursor: pointer; 
+    font-size: 14px; 
+    transition: background-color 0.3s;
+}
+
+.suggestionsListButton:hover {
+    background-color: #9E69FA;
+}

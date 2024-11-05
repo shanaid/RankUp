@@ -1,0 +1,65 @@
+.SidebarBack {
+    margin: 0 25px;
+    width: 22%;
+    height: 91%;
+    border-radius: 20px;
+    background-color: rgba(255, 255, 255, 0.6);
+    backdrop-filter: blur(12px);
+}
+
+.SidebarLogo {
+    text-align: center;
+    cursor: pointer;
+}
+
+.SidebarLogo>h2 {
+    font-family: 'PretendardB';
+    font-size: 35px;
+    margin: 40px 0;
+}
+
+.SidebarList {
+    display: flex;
+    flex-direction: column;
+}
+
+.SidebarList > div {
+    display: flex;
+    align-items: start;
+    width: 100%;
+    height: 8vh;
+    margin-bottom: 15px;
+}
+
+.SidebarList .menu {
+    display: flex;
+    align-items: center;
+    font-size: 18px;
+    width: 100%;
+    height: 8vh;
+    margin-bottom: 15px;
+    transition: background-color 0.3s, color 0.3s, transform 0.3s; /* Added transition */
+}
+
+.SidebarList .menu:hover {
+    transform: translateX(10px); /* Slide effect on hover */
+}
+
+.SidebarList .menu-icon {
+    width: 35px;
+    height: 35px;
+    margin-right: 15px;
+    margin-left: 25px;
+    color: #49454F;
+    transition: color 0.3s; /* Added transition */
+}
+
+#SidebarBack {
+    background-color: rgba(135, 201, 8, 0.13);
+}
+
+#SidebarLine {
+    color: rgba(255, 255, 255, 0.0);
+    height: 100%;
+    margin-left: auto;
+}

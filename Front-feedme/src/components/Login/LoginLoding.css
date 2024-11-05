@@ -1,0 +1,89 @@
+.LoginLoding {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  font-family: sans-serif;
+}
+
+.LoginLodingMain{
+  width: 100%;
+  height: 100vh;
+  overflow-x: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+
+.LoginLodingMain::before {
+  content: '';
+  background: url('../../assets/images/img-main.png') no-repeat center;
+  background-size: cover;
+  opacity: 0.7;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  overflow-x: hidden;
+  display: flex;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+}
+
+.LoginLodingWrap {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 4vmin;
+}
+
+.LoginLodingWrap button {
+  padding: 2vmin 4vmin;
+  border: 2px solid #fff;
+  background: none;
+  color: #fff;
+  font-size: 3vmin;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.LoginLodingWrap .buttons {
+  display: flex;
+  gap: 2vmin;
+  position: fixed;
+  top: 5vmin;
+}
+
+.LoginLodingMainBox {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(255, 255, 255, 0.8);
+  width: 50vmin;
+  height: 50vmin;
+  font-size: 10vmin;
+  color: black;
+  border-radius: 50%;
+  font-weight: bold;
+}
+
+.Signuperror{
+  display: flex;
+  align-items: center;
+  color: red;
+  font-family: PretendardM;
+  justify-content: center;
+  font-size: 1.3rem;
+  margin-top: 0;
+  margin-bottom: 5%;
+
+
+}

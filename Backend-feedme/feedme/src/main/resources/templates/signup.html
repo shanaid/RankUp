@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Signup</title>
+</head>
+<body>
+<h1>Signup Page</h1>
+<p>Email: <span id="email"></span></p>
+<p>Provider: <span id="provider"></span></p>
+<script>
+  const params = new URLSearchParams(window.location.search);
+  document.getElementById('email').textContent = params.get('email');
+  document.getElementById('provider').textContent = params.get('provider');
+</script>
+</body>
+</html>

@@ -1,0 +1,84 @@
+.ChatFriendListContainer {
+  width: 100%;
+}
+
+.ChatFriendSearch {
+  width: 100%;
+  padding: 1rem; 
+  border-radius: 25px;
+  border: none;
+  margin-bottom: 1%;
+  box-sizing: border-box;
+  font-family: 'PretendardR';
+  font-size: 1rem;
+  line-height: 1.5; 
+}
+
+.ChatFriendList {
+  display: flex;
+  flex-direction: column;
+  max-height: 100%;
+  overflow-y: auto;
+  padding-top: 4%;
+  padding-left: 3%;
+  padding-right: 3%;
+}
+
+.ChatFriendList::-webkit-scrollbar {
+  width: 10px;
+}
+
+.ChatFriendList::-webkit-scrollbar-thumb {
+  background-color: rgba(0, 0, 0, 0.5);
+  border-radius: 20px;
+}
+
+.ChatFriendList::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+.ChatFriendItem {
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  border-bottom: 1px solid #cdcdcd;
+}
+
+.ChatFriendAvatar {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+.ChatFriendInfo {
+  display: flex;
+  align-items: center; 
+  justify-content: space-between;
+  width: 100%;
+}
+
+.ChatFriendName {
+  cursor: pointer;
+  color: #000; 
+  margin-right: auto; 
+  font-family: 'PretendardR';
+  font-size: 1.2rem;
+  padding-left: 3%;
+}
+
+
+
+
+.ChatIconButton {
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: #000; 
+  margin-left: 10px;
+}
+
+.ChatIconButton:hover,
+.ChatIconButton.active {
+  color: #9E69FA;
+}
